@@ -457,19 +457,6 @@
     <button class="glow-button" onclick="window.location.href='https://discord.gg/988'"><i>988 Server</i></button>
   </div>
 
-  <!-- Music controls -->
-  <audio id="bg-music"></audio>
-  <div id="music-controls">
-    <span id="song-title"></span>
-    <div class="controls-row">
-      <button id="shuffle">⇆</button>
-      <button id="prev">⏮</button>
-      <button id="play">⏯</button>
-      <button id="next">⏭</button>
-      <button id="loop">↻</button>
-    </div>
-    <div id="progress-container"><div id="progress-bar"></div></div>
-  </div>
 
   <script>
     /* snowflakes */
@@ -523,19 +510,7 @@
     });
 
     /* music player */
-    const songs = [
-      {title:'Wasted - Juice WRLD Ft. Lil Uzi Vert', src:'music/wasted.mp3'},
-      {title:'Headshot - Lil Tjay Ft. Polo G & Fivio', src:'music/song2.mp3'},
-      {title:'All the time - Destroy Lonely', src:'music/song3.mp3'},
-      {title:'Swervin - A Boogie Wit da Hoodie Ft. 6ix9ine', src:'music/song4.mp3'},
-      {title:"Ain't Nuthin - Rich Amiri", src:'music/song5.mp3'},
-      {title:'Campfire Freestyle - Juice WRLD', src:'music/song6.mp3'},
-      {title:'Leanin - Lil Peep', src:'music/song7.mp3'},
-      {title:'Wake me - Lil Peep', src:'music/song8.mp3'},
-      {title:'Watch - Lil Peep', src:'music/song9.mp3'},
-      {title:'Choose - Lil Peep', src:'music/song10.mp3'},
-      {title:'gangmonkey - gangmonkey audio', src:'music/I_love_you_thighs_3-1.mp3'},
-    ];
+ 
 
     let currentIndex=0, isShuffle=false, isLoop=false;
     const music=document.getElementById('bg-music');
